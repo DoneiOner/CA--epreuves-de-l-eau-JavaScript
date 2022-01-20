@@ -8,3 +8,18 @@ $> python exo.py
 00 01, 00 02, 00 03, 00 04, ... , 00 99, 01 02, ... , 97 99, 98 99
 $>
 */
+function twoDigits (n) {
+    return (n < 10 ? '0' : '') + n ;
+}
+
+
+
+
+for (let index = 0; index <= 99; index++) {
+    for (let index2 = 1; index2 <= 99; index2++) {
+        console.log(twoDigits(index) + ' ' +twoDigits(index2));
+
+        
+    };
+    
+}
