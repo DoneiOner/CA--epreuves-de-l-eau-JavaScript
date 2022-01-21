@@ -22,19 +22,19 @@ if (process.argv[2] == null || !(isNaN(process.argv[2]))) {
 }
 
 
-
-
+// PARSING
 let string = process.argv[2];
 //console.log(string);
 
 
+// FONCTIONS
 function IsOdd(n) {
         if (n % 2 === 0){ return true;}
         else { return false;}
 }
 
 
-
+// RESOLUTION / AFFICHAGE
 
 for (let index = 0; index < string.length; index++) {
     if (IsOdd(index)) {
