@@ -18,3 +18,8 @@ error
 Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 */
+
+let string = process.argv[2];
+let substring = process.argv[3];
+
+string.includes(substring) ? console.log(true) : console.log(false);
