@@ -14,3 +14,34 @@ error
 Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 */
+
+// GESTION D'ERREURS
+if (process.argv[2] == null || !(isNaN(process.argv[2]))) {
+    console.log('Erreur.');
+    process.exit(0);
+}
+
+
+
+
+let string = process.argv[2];
+//console.log(string);
+
+
+function IsOdd(n) {
+        if (n % 2 === 0){ return true;}
+        else { return false;}
+}
+
+
+
+
+for (let index = 0; index < string.length; index++) {
+    if (IsOdd(index)) {
+        process.stdout.write(string[index].toUpperCase());
+    } else {
+        process.stdout.write(string[index].toLowerCase());
+    }
+    
+}
+console.log('');
