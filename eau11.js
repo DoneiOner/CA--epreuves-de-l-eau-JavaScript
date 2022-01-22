@@ -21,7 +21,7 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 // PSEUDO CODE :
 // REMPLIR UN TABLEAU DES NOMBRES
-//MINDIFF = 0
+// MINDIFF = difference entre nombres à l'index 0 et à l'index 1
 // FONCTION POUR PARCOURIR MON TABLEAU => ALIMENTER MINDIFF D'APRES LE NOMBRE FOURNI EN ARGUMENT A LA FONCTION
 // BOUCLE POUR APPELER LA FONCTION DEPUIS CHAQUE INDEX DE MON TABLEAU
 
@@ -50,7 +50,6 @@ for (let i = 2; i < process.argv.length; i++) {
 }
 
 let minDiff = Math.abs(array[0] - array[1]);
-
 
 
 

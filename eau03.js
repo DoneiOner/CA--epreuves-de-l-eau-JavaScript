@@ -14,17 +14,21 @@ Afficher -1 si le paramètre est négatif ou mauvais.
 
 // la suite de Fibonacci est une suite d'entiers dans laquelle chaque terme est la somme des deux termes qui le précèdent.
 
+// PSEUDO CODE :
 //alimenter un tableau de suite de fibonacci jusqu'au nombre saisi
 //afficher la valeur a l'[index saisi -1]
 
-//gestion d'erreurs
+// gestion d'erreurs
 if (process.argv[2] == null || isNaN(process.argv[2]) || Math.sign(process.argv[2]) == -1 || process.argv[3] != null){
     console.log("-1");
     return;
 }
 
+// parsing
 let tableau = [0, 1];
 let saisie = process.argv[2];
+
+// resolution
 for (let index = 2; index <= saisie; index++) {
     n = (tableau[index-2]+tableau[index-1]);
     tableau.push(n);

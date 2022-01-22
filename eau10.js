@@ -21,7 +21,6 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 // PSEUDO CODE :
 // JE FAIS MON PARSING, AVEC UN TABLEAU DES ARGUMENTS, ET UNE CONST DU DERNIER ARGUMENT
-
 // JE PARCOURE MON TABLEAU EN COMPARANT AVEC MA CONST
 // J'AFFICHE L'INDEX DE LA STRING RETROUVEE
 // OU "-1"
@@ -32,6 +31,9 @@ if ( process.argv[3] == null ) {
     console.log("Erreur.");
     process.exit(0);
 }
+
+
+
 // PARSING: 
 let array = [];
 
@@ -39,8 +41,7 @@ for (let i = 2; i < process.argv.length-1; i++) {
     array.push(process.argv[i]);    
 }
 let wanted = process.argv[process.argv.length-1];
-//console.log(array);
-//console.log(wanted);
+
 
 // RESOLUTION : 
 for (let i = 0; i < array.length; i++) {

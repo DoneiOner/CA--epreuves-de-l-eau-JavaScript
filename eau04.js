@@ -30,7 +30,21 @@ if(args[2] === undefined || process.argv.length > 3  ) {
 // PARSING
 let N = parseInt(args[2])
 
+
+
 // FONCTIONS
+
+function nbrPremier(N) {    
+    for(var i = 2; i <= Math.sqrt(N); i++) {    
+        if(N%i === 0) {
+            return false ;
+        }
+        
+        return N > 1 ;
+    } 
+}
+
+
 function findPremier(N) {
     while (nbrPremier(N) === false) {
         N++
@@ -38,15 +52,7 @@ function findPremier(N) {
     console.log("Le nombre premier supérieur est "+N);}
 
 
-function nbrPremier(N) {    
-    for(var i = 2; i <= Math.sqrt(N); i++) {    
-    if(N%i === 0) {
-    return false ;
-    }
-    
-    return N > 1 ;
-} 
-}
 
 // RESOLUTION
+
 findPremier(N+1);

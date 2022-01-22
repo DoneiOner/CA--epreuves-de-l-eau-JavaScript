@@ -27,13 +27,18 @@ if (process.argv.length < 3)  {
     return
 }
 
+
+
+
 // parsing
 tableau = [];
 for (i=2; i<process.argv.length; i++) {
     tableau.push(process.argv[i]);
 }
-//console.log(tableau);
-//console.log(tableau.length);
+
+
+
+
 // resolution
 for (let index = tableau.length -1; index >= 0 ; index--) {
    
