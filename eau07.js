@@ -14,7 +14,7 @@ error
 Afficher error et quitter le programme en cas de problèmes d’arguments
 
 */
-console.log(process.argv.length);
+//console.log(process.argv.length);
 // GESTION D'ERREURS
 if (process.argv[2] == null || !(isNaN(process.argv[2])) || (process.argv.length > 3)) {
     console.log('Erreur.');
@@ -28,7 +28,7 @@ let saisie = process.argv[2];
 //console.log(process.argv[2]);
 let substring = [];
 let n = 0;
-let enmajuscule = true;
+let enMajuscule = true;
 
 //  JE VAIS REMPLIR UN TABLEAU DES SUBSTRINGS 
 // EN PARCOURANT LA SAISIE de caractere en caractere
@@ -36,15 +36,15 @@ let enmajuscule = true;
 for (let i = 0; i < saisie.length; i++) {
         substring.push(saisie[i])
 }
-console.log(substring);
+//console.log(substring);
 
 
-// ENSUITE  JE VAIS AFFICHER LE PREMIER CARATERE EN MAJUSCULE PUIS LE RESTE DE LA SUBSTRING EN MINUSCULES
+// ENSUITE  JE VAIS AFFICHER LE PREMIER CARACTERE EN MAJUSCULE PUIS LE RESTE DE LA SUBSTRING EN MINUSCULES
 // PUIS QUAND J'ARRIVE A UN ESPACE J'AFFICHE LE CARATERE SUIVANT EN MAJUSCULE
 function majuscule(char, i) {
-    if (enmajuscule == true) {
+    if (enMajuscule == true) {
         process.stdout.write(char.toUpperCase());
-        enmajuscule = false;
+        enMajuscule = false;
     } else {
         process.stdout.write(char);
     }
@@ -53,10 +53,11 @@ function majuscule(char, i) {
 
 for (let i = 0; i < substring.length; i++) {
     if (substring[i-1] == " ") {
-        enmajuscule = true;        
+        enMajuscule = true;        
     }
    majuscule(substring[i], i);
 }
+console.log('');
     
 
 
