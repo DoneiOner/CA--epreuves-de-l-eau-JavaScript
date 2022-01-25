@@ -32,6 +32,18 @@ Wikipedia vous présentera une belle description de cet algorithme de tri.
 
 
 // GESTION D'ERREURS
+// GESTION D'ERREURS : 
+for (let i = 2; i < process.argv.length; i++) {
+    let saisie = process.argv[i];
+    if ((isNaN(saisie))) {
+        console.log("Erreur.");
+        process.exit(0);
+    }   
+}
+if (process.argv.length <= 3 ) {
+    console.log("Erreur.");
+        process.exit(0);
+}
 
 
 // PARSING
@@ -42,7 +54,7 @@ let permutation = true;
 for (let i = 2; i < process.argv.length; i++) {
 	array.push(process.argv[i]);	
 }
-console.log(array);
+
 
 // FONCTIONS
 function my_bubble_sort(array) {
