@@ -25,6 +25,7 @@ Wikipedia vous présentera une belle description de cet algorithme de tri.
 
 
 
+
 // PARSING
 let array = [];
 let newArray = [];
@@ -32,6 +33,10 @@ for (let i = 2; i < process.argv.length; i++) {
 	array.push(process.argv[i]);	
 }
 let indexToErase;
+
+
+
+
 
 //GESTION D'ERREURS
 for (let i = 2; i < process.argv.length; i++) {
@@ -45,6 +50,10 @@ if (process.argv.length <= 3 ) {
     console.log("Erreur.");
         process.exit(0);
 }
+
+
+
+
 
 
 // FONCTIONS
@@ -63,15 +72,23 @@ function my_select_sort(array) {
 	}
 
 
+
+
+
+
 //RESOLUTION
 while (array.length !=0) {
 my_select_sort(array);
 }
 
 
+
+
+
+
 //AFFICHAGE
 for (let index = 0; index < newArray.length; index++) {	
-	process.stdout.write(newArray[index] + " " ); // affiche l'index 0 et deux fois l'index 1, au lieu de la valeur  min
+	process.stdout.write(newArray[index] + " " ); 
 }
 console.log("");
 
