@@ -25,48 +25,6 @@ Wikipedia vous présentera une belle description de cet algorithme de tri.
 
 
 
-// PSEUDO CODE :
-// je cree un tableau des nombres
-// je le parcoure pour chercher la plus petite valeur
-// je mets cette valeur a index 0
-// la deuxieme plus petite valeur à index 0+1
-// etc
-
-// j'affiche le resultat
-
-/*
-// FONCTIONS :
-function my_select_sort (array) {
-	
-	
-	
-	
-	
-	
-	// determiner le plus petit nombre
-	console.log(array.length);
-	array.splice(index, 1);
-	console.log(array);
-	new_array.push(min);		
-	console.log(new_array);
-	console.log(length + 'ici');
-	length--;
-	
-	//console.log(min);
-}
-while (length > 0) {
-	my_select_sort(array);
-}
-*/
-
-//console.log(new_array);
-//console.log(array);
-
-
-// MARDI 25 JANVIER 09h00
-
-
-
 // PARSING
 let array = [];
 let newArray = [];
