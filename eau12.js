@@ -31,7 +31,7 @@ Wikipedia vous présentera une belle description de cet algorithme de tri.
 // TANT QUE PERMUTATION = TRUE EN FIN DE BOUCLE, LA BOUCLE CONTINUE
 
 
-// GESTION D'ERREURS
+
 // GESTION D'ERREURS : 
 for (let i = 2; i < process.argv.length; i++) {
     let saisie = process.argv[i];
