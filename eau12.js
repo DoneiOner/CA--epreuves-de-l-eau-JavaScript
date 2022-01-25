@@ -56,6 +56,7 @@ for (let i = 2; i < process.argv.length; i++) {
 }
 
 
+
 // FONCTIONS
 function my_bubble_sort(array) {
 	permutation = false ; 
