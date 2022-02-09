@@ -52,7 +52,7 @@ let new_array = [];
 let permutation = true;
 
 for (let i = 2; i < process.argv.length; i++) {
-	array.push(process.argv[i]);	
+	array.push(parseInt(process.argv[i]));	
 }
 
 
@@ -83,3 +83,4 @@ my_bubble_sort(array);
 for (let i = 0; i < array.length; i++) {
 	process.stdout.write(array[i] + " ");	
 }
+console.log('');
