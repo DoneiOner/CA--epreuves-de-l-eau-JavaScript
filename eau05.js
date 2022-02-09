@@ -18,8 +18,16 @@ error
 Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 */
+// GESTION D'ERREURS
+if (process.argv[2] == undefined || process.argv[3] == undefined) {
+    console.log('Erreur.');
+    process.exit(0);
+}
 
+// PARSING
 let string = process.argv[2];
 let substring = process.argv[3];
 
+
+// RESOLUTION
 string.includes(substring) ? console.log(true) : console.log(false);
