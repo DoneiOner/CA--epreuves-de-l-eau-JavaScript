@@ -33,6 +33,8 @@ for (let index = 2; index <= saisie; index++) {
     n = (tableau[index-2]+tableau[index-1]);
     tableau.push(n);
 }
-//console.log(tableau);
-console.log(tableau[saisie]);
+
+console.log(tableau);
+
+console.log(tableau[saisie-1]);
 
