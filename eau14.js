@@ -56,16 +56,21 @@ function my_select_sort(array) {
     console.log(min + " : charcode of min");
 	
 	for (let i = 0; i < array.length; i++) {
-        console.log("charcode of index = "+ parseInt(array[i].charCodeAt(0)))	;	
-        if (parseInt(array[i].charCodeAt(0)) <= (parseInt(min.charCodeAt(0)))){
+        console.log("charcode of index = " + parseInt(array[i].charCodeAt(0)))	;	
+        if (parseInt(array[i].charCodeAt(0)) == (parseInt(min.charCodeAt(0))) && (parseInt(array[i].charCodeAt(1)) < (parseInt(min.charCodeAt(1))))){
+                min = (array[i]);					
+                indexToErase = i; 
+            } 
+        else if (parseInt(array[i].charCodeAt(0)) <= (parseInt(min.charCodeAt(0)))){
             min = (array[i]);					
 			indexToErase = i;
         }
     }
+
     newArray.push(min);														
     array.splice(indexToErase, 1);
-}
 
+}
 
 
 
