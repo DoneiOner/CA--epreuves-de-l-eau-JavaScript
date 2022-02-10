@@ -27,7 +27,7 @@ for (let index = 0; index <= 99; index++) {
         array.push(twoDigits(index)+twoDigits(index2))
     }
 }
-console.log(array);
+//console.log(array);
 
 //console.log(array[10].str.substring(0, 2));
 for (let j = 0; j < array.length; j++) {
@@ -50,3 +50,4 @@ for (let j = 0; j < array.length; j++) {
 for (let i = 0; i < array.length; i++) {
     process.stdout.write( ' ' + array[i] + '  ');
 }
+console.log('');
